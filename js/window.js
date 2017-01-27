@@ -2,7 +2,7 @@ let syntax = window.location.search.substring(1);
 let editor = syntax || "markdown";
 
 // Update Title
-document.getElementsByTagName("title").innerText=`Texter | ${syntax}`;
+document.title =`Texter | ${syntax}`;
 
 // Setup editor
 e = ace.edit("editor");
